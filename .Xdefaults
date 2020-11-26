@@ -1,0 +1,10 @@
+XTerm*background: black
+XTerm*Foreground: Grey
+
+XTerm*faceName: Liberation Mono
+XTerm*faceSize: 10
+
+XTerm*saveLines: 16000
+
+XTerm.vt100.selectToClipboard: true
+XTerm*metaSendsEscape: true

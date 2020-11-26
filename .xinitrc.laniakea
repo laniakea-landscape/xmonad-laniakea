@@ -1,0 +1,17 @@
+export EDITOR='ne'
+export TERM='xterm'
+
+xsetroot -cursor_name left_ptr &
+
+setxkbmap -layout "us,ru" -option grp:rctrl_rshift_toggle
+
+export PATH=~/bin:$PATH
+
+feh --bg-center ~/.xmonad/clouds.jpg
+
+export _volume_pipe=/tmp/.volume-pipe
+[[ -S $_volume_pipe ]] || mkfifo $_volume_pipe
+
+exec ~/.xmonad/getvolume.sh | $_volume_pipe
+
+exec xmonad >> ~/.cache/xmonad/stdout 2>> ~/.cache/xmonad/stderr

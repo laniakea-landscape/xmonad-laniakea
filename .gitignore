@@ -1,0 +1,6 @@
+.idea/
+xmonad.errors
+xmonad.hi
+xmonad.o
+xmonad.state
+*-linux

@@ -1,0 +1,8 @@
+PS1='\[\e[1;31m\]\u@\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;31m\]#\[\e[m\] \[\e[0;37m\]'
+export EDITOR='ne'
+
+eval $(dircolors -b)
+
+alias ls='ls --color=auto'
+alias ll='ls -la'
+
